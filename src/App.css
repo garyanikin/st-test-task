@@ -23,7 +23,6 @@
   position: absolute;
   top: 0;
   height: 100%;
-  font-size: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,12 +31,14 @@
 .search-input__icon {
   left: 0;
   width: 25px;
+  font-size: 11px;
 }
 
 .search-input__close {
   right: 0;
   width: 30px;
   cursor: pointer;
+  font-size: 10px;
 }
 
 .search-input__icon span,
