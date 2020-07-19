@@ -1,5 +1,6 @@
 {
   "name": "savetime-test-task",
+  "homepage": "https://garyanikin.github.io/st-test-task/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
