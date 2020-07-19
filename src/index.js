@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunkMiddleware from "redux-thunk";
+import { FETCH_START, FETCH_SUCCESS } from "./actions";
+
+const reducer = (state, action) => {
+  if (action.type === FETCH_START) {
+    return { ...state, input: action.payload };
+  }
+
+  // Сохраняем в store ответ от API
+  if (action.type === FETCH_SUCCESS) {
+    return { ...state, results: action.payload };
+  }
+
+  return state;
+};
+
+const store = createStore(
+  reducer,
+  { input: "", results: [] },
+  applyMiddleware(thunkMiddleware)
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
