@@ -1,1 +1,63 @@
+.App {
+  width: 600px;
+  margin: 0 auto;
+}
 
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  height: 35px;
+  padding: 5px 25px 5px 30px;
+  box-sizing: border-box;
+}
+
+.search-input input:placeholder-shown {
+  opacity: 0.6;
+}
+
+.search-input__icon,
+.search-input__close {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input__icon {
+  left: 0;
+  width: 25px;
+}
+
+.search-input__close {
+  right: 0;
+  width: 30px;
+  cursor: pointer;
+}
+
+.search-input__icon span,
+.search-input__close span {
+  transform: rotate(-45deg);
+}
+
+.results {
+  margin-top: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  padding: 10px 15px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.2s;
+  position: relative;
+  z-index: -1;
+}
+
+.results.results_showed {
+  opacity: 1;
+  transform: translateY(0);
+}

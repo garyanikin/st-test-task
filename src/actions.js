@@ -26,7 +26,9 @@ export function fetchAPI(input) {
       .then((response) => response.json())
       .then((data) => {
         // Оставляем только результаты содержащие input
-        const results = data.filter(({ title }) => title.indexOf(input) !== -1);
+        const results = data
+          .filter(({ title }) => title.indexOf(input) !== -1)
+          .slice(0, 5);
         // Отправляем в store результаты запроса к API
         dispatch(fetchSuccess(results));
       });

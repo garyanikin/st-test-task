@@ -8,12 +8,12 @@ import { FETCH_START, FETCH_SUCCESS } from "./actions";
 
 const reducer = (state, action) => {
   if (action.type === FETCH_START) {
-    return { ...state, input: action.payload };
+    return { ...state, input: action.payload, isFetching: true };
   }
 
   // Сохраняем в store ответ от API
   if (action.type === FETCH_SUCCESS) {
-    return { ...state, results: action.payload };
+    return { ...state, results: action.payload, isFetching: false };
   }
 
   return state;
@@ -21,7 +21,7 @@ const reducer = (state, action) => {
 
 const store = createStore(
   reducer,
-  { input: "", results: [] },
+  { input: "", results: [], isFetching: false },
   applyMiddleware(thunkMiddleware)
 );
 
