@@ -10,3 +10,7 @@
 ### Запуск проекта
 
 `npm start`
+
+
+### Preview
+https://garyanikin.github.io/st-test-task/build/index.html
