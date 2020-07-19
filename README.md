@@ -2,7 +2,7 @@
 
 Реализовать поисковую строку с использованием React и Redux
 
-![task](https://raw.githubusercontent.com/garyanikin/savetime_test_task/master/task.png)
+![task](https://github.com/garyanikin/st-test-task/blob/master/task.png?raw=true)
 
 - debounce
 - redux async actions
