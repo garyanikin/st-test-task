@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/st-test-task/build/static/css/main.11d0e8fc.chunk.css",
-    "main.js": "/st-test-task/build/static/js/main.4e66b4b0.chunk.js",
-    "main.js.map": "/st-test-task/build/static/js/main.4e66b4b0.chunk.js.map",
+    "main.js": "/st-test-task/build/static/js/main.ef66b9c4.chunk.js",
+    "main.js.map": "/st-test-task/build/static/js/main.ef66b9c4.chunk.js.map",
     "runtime-main.js": "/st-test-task/build/static/js/runtime-main.3931fc1b.js",
     "runtime-main.js.map": "/st-test-task/build/static/js/runtime-main.3931fc1b.js.map",
     "static/js/2.9a4ecf61.chunk.js": "/st-test-task/build/static/js/2.9a4ecf61.chunk.js",
     "static/js/2.9a4ecf61.chunk.js.map": "/st-test-task/build/static/js/2.9a4ecf61.chunk.js.map",
     "index.html": "/st-test-task/build/index.html",
-    "precache-manifest.fb6674059529b0f5264dc838ba4c79a0.js": "/st-test-task/build/precache-manifest.fb6674059529b0f5264dc838ba4c79a0.js",
+    "precache-manifest.466599dfe903a1665137be476abec912.js": "/st-test-task/build/precache-manifest.466599dfe903a1665137be476abec912.js",
     "service-worker.js": "/st-test-task/build/service-worker.js",
     "static/css/main.11d0e8fc.chunk.css.map": "/st-test-task/build/static/css/main.11d0e8fc.chunk.css.map",
     "static/js/2.9a4ecf61.chunk.js.LICENSE.txt": "/st-test-task/build/static/js/2.9a4ecf61.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3931fc1b.js",
     "static/js/2.9a4ecf61.chunk.js",
     "static/css/main.11d0e8fc.chunk.css",
-    "static/js/main.4e66b4b0.chunk.js"
+    "static/js/main.ef66b9c4.chunk.js"
   ]
 }

@@ -22,7 +22,7 @@ export function fetchAPI(input) {
     dispatch(fetchStart(input));
 
     // Делаем запрос к API
-    return fetch(`http://jsonplaceholder.typicode.com/albums`)
+    return fetch(`https://jsonplaceholder.typicode.com/albums`)
       .then((response) => response.json())
       .then((data) => {
         // Оставляем только результаты содержащие input
